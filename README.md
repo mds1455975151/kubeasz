@@ -16,14 +16,13 @@
 
 ## 组件版本
 
-1. kubernetes	v1.9.1
-1. etcd		v3.2.13
-1. docker	17.12.0-ce
-1. calico/node	v2.6.5
-1. flannel	v0.9.1
-
-+ 附：集群用到的所有二进制文件已打包好供下载 [https://pan.baidu.com/s/1c4RFaA](https://pan.baidu.com/s/1c4RFaA)
-+ 注：`Kubernetes v1.8.x` 版本请切换到项目分支 `v1.8`, 若你需要从v1.8 升级至 v1.9，请参考 [升级注意](docs/upgrade.md)
+- kubernetes	v1.9.3
+- etcd		v3.3.1
+- docker	17.12.0-ce
+- calico/node	v3.0.3
+- flannel	v0.10.0
+  - 附：集群用到的所有二进制文件已打包好供下载 [https://pan.baidu.com/s/1c4RFaA](https://pan.baidu.com/s/1c4RFaA)
+  - 注：`Kubernetes v1.8.x` 版本请切换到项目分支 `v1.8`, 若你需要从v1.8 升级至 v1.9，请参考 [升级注意](docs/upgrade.md)
 
 ## 快速指南
 
@@ -31,30 +30,30 @@
 
 ## 安装步骤
 
-1. [集群规划和基础参数设定](docs/00-集群规划和基础参数设定.md)
-1. [创建CA证书和环境配置](docs/01-创建CA证书和环境配置.md)
-1. [安装etcd集群](docs/02-安装etcd集群.md)
-1. [配置kubectl命令行工具](docs/03-配置kubectl命令行工具.md)
-1. [安装docker服务](docs/04-安装docker服务.md)
-1. [安装kube-master节点](docs/05-安装kube-master节点.md)
-1. [安装kube-node节点](docs/06-安装kube-node节点.md)
-1. [安装calico网络组件](docs/07-安装calico网络组件.md)
-1. [安装flannel网络组件](docs/07-安装flannel网络组件.md)
+- [集群规划和基础参数设定](docs/00-集群规划和基础参数设定.md)
+- [创建CA证书和环境配置](docs/01-创建CA证书和环境配置.md)
+- [安装etcd集群](docs/02-安装etcd集群.md)
+- [配置kubectl命令行工具](docs/03-配置kubectl命令行工具.md)
+- [安装docker服务](docs/04-安装docker服务.md)
+- [安装kube-master节点](docs/05-安装kube-master节点.md)
+- [安装kube-node节点](docs/06-安装kube-node节点.md)
+- [安装calico网络组件](docs/07-安装calico网络组件.md)
+- [安装flannel网络组件](docs/07-安装flannel网络组件.md)
 
 ## 使用指南
 
 - 常用插件部署  [kubedns](docs/guide/kubedns.md) [dashboard](docs/guide/dashboard.md) [heapster](docs/guide/heapster.md) [ingress](docs/guide/ingress.md) [efk](docs/guide/efk.md) [harbor](docs/guide/harbor.md)
 - K8S 特性实验  [HPA](docs/guide/hpa.md) [NetworkPolicy](docs/guide/networkpolicy.md)
-- 集群运维指南
+- 集群运维指南 [AddNode](docs/guide/op/AddNode.md) [AddMaster](docs/guide/op/AddMaster.md)
 - 应用部署实践
 
 请根据这份 [目录](docs/guide/index.md) 阅读你所感兴趣的内容，尚在更新中...
 
 ## 参考阅读
 
-1. 建议阅读 [rootsongjc-Kubernetes指南](https://github.com/rootsongjc/kubernetes-handbook) 原理和实践指南。
-1. 建议阅读 [feisky-Kubernetes指南](https://github.com/feiskyer/kubernetes-handbook/blob/master/SUMMARY.md) 原理和部署章节。
-1. 建议阅读 [opsnull-安装教程](https://github.com/opsnull/follow-me-install-kubernetes-cluster) 二进制手工部署。
+- 建议阅读 [rootsongjc-Kubernetes指南](https://github.com/rootsongjc/kubernetes-handbook) 原理和实践指南。
+- 建议阅读 [feisky-Kubernetes指南](https://github.com/feiskyer/kubernetes-handbook/blob/master/SUMMARY.md) 原理和部署章节。
+- 建议阅读 [opsnull-安装教程](https://github.com/opsnull/follow-me-install-kubernetes-cluster) 二进制手工部署。
 
 ## 版权
 
