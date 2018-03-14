@@ -63,4 +63,4 @@
   copy: src=95-k8s-sysctl.conf dest=/etc/sysctl.d/95-k8s-sysctl.conf
 
 - name: 生效系统参数
-  shell: "sysctl -p /etc/sysctl.d/95-k8s-sysctl.conf"
+  shell: "modprobe br_netfilter; sysctl -p /etc/sysctl.d/95-k8s-sysctl.conf"
